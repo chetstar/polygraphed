@@ -1,6 +1,6 @@
 CSRF_ENABLED = True
 SECRET_KEY = 'you-will-never-guess'
-
+DEBUG=True
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -10,7 +10,7 @@ THE_API_KEY = str(os.environ.get('theapikey'))
 
 #variables for ingestion by flask app
 # from apikey import _API_KEY
-API_KEY = THE_API_KEY
+_API_KEY = THE_API_KEY
 # API_KEY = _API_KEY
 
 class _DefaultSettings(object):

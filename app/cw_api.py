@@ -1,13 +1,15 @@
-# import config.THE_API_KEY
+from apikey import _API_KEY
 import requests
 import json
 from date_convert import javascript_timestamp
 import datetime
 
-_API_KEY='THE_API_KEY'
+# _API_KEY=_API_KEY
+
+# print _API_KEY
 
 def cw_search_text(keywords, date_low, date_high):
-    API_KEY = THE_API_KEY
+    API_KEY = _API_KEY
     api_results = []
     for keyword in keywords:
         if keyword != '':
@@ -29,7 +31,7 @@ def cw_search_text(keywords, date_low, date_high):
     return api_results
 
 def cw_search_keywords(keywords, date_low, date_high, granularity):
-    API_KEY = THE_API_KEY
+    API_KEY = _API_KEY
     api_results = []
     for keyword in keywords:
         query_params = {'apikey': API_KEY,

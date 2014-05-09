@@ -1,1 +1,3 @@
-_API_KEY = '<your api key here>'
+import config
+
+_API_KEY = config._API_KEY
