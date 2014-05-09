@@ -4,7 +4,7 @@ import json
 from date_convert import javascript_timestamp
 import datetime
 
-_API_KEY=THE_API_KEY
+_API_KEY='THE_API_KEY'
 
 def cw_search_text(keywords, date_low, date_high):
     API_KEY = THE_API_KEY
